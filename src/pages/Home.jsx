@@ -27,9 +27,9 @@ function Home() {
     <div className="font-Lato bg-custom-bg">
       <header className="flex justify-center  w-full bg-blue-800 ">
         <div className="flex justify-between text-xs md:text-base text-white w-5/6 p-2">
-          <div >
+          <div className="flex flex-col md:flex-row">
             We are now hosting events with Zoom Webinars!
-            <a href="#" target="_blank" className="font-bold pl-3 underline">
+            <a href="#" target="_blank" className="font-bold md:pl-3 underline">
               Find out more
             </a>
           </div>
