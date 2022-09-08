@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import DataImage from "../data/Images.js";
 
 function CardPost(props) {
-  console.log(DataImage[0]);
   return (
     <div className="bg-white max-w-xs rounded-xl overflow-hidden shadow-xl flex flex-col justify-between">
       <div>
