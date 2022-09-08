@@ -22,21 +22,28 @@ function Comments(props) {
   const commentElement =
     comments.length > 0 &&
     comments.map((comment) => (
-      <div className="p-5 " key={comment.id}>
-        <p className="text-black font-bold text-lg">{comment.email}</p>
+      <div className="py-5" key={comment.id}>
+        <p className="text-black font-bold md:text-lg sm:text-base">
+          {comment.email}
+        </p>
         <p className="pt-3 text-gray-600">{comment.body}</p>
       </div>
     ));
 
   return (
     <div>
-      <div className="text-3xl text-blue-800 font-bold py-5">Comments {`(${commentElement.length})`}</div>
+      <div className="text-3xl text-blue-800 font-bold py-5">
+        Comments {`(${commentElement.length})`}
+      </div>
       <input
         type="email"
-        className=" border-2 border-blue-800 text-gray-900 text-sm rounded-lg w-1/2 p-2.5"
+        className=" border-2 border-blue-800 text-gray-900 text-sm rounded-lg w-full lg:w-1/2 p-2.5"
         placeholder="Email"
       />
-      <div className="p-10 divide-y-2 divide-gray-300"> {commentElement}</div>
+      <div className="py-10 md:px-10 divide-y-2 divide-gray-300">
+        {" "}
+        {commentElement}
+      </div>
     </div>
   );
 }

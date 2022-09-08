@@ -57,7 +57,7 @@ function Post() {
                 ? DataImage[0].desc
                 : DataImage[1].desc
             }
-            className="max-w-3xl place-self-center py-10"
+            className="md:max-w-3xl place-self-center py-10"
           />
         </div>
         <div>{detail.body}</div>
